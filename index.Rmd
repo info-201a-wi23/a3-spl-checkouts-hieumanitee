@@ -28,6 +28,8 @@ These will likely be calculated using your DPLYR skills, answering questions suc
 - How has the number of print book checkouts changed over time?
 
 Feel free to calculate and report values that you find relevant.
+nrow(data)
+ncol(data)
 
 ### The Dataset
 
