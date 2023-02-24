@@ -7,9 +7,18 @@ output: html_document
 
 An introduction of the data and a description of the trends/books/items you are choosing to analyze (and why!)
 
+As a big user of Audiobooks, Ebooks, and video discs myself, I was curious to see how many of these material types were checked out in comparison to the traditional book. In today's digital age, everyone seems to at least have a phone, ipad, or laptop at their disposal so my hope is to find out if digital books and technology have overtaken physical books and older material types in popularity. After comparing the total amount of checkouts per month of each book type, and the total overall checkouts for the year of 2022 of each material type, the numbers were much closer than I had expected. 
+
+
 ### Summary Information
 
+
+
 Write a summary paragraph of findings that includes the 5 values calculated from your summary information R script
+
+The three material types that get checked out the highest are books with 3147727, ebooks with 2989063, and audiobooks with 2152348. Every other material type fell far behind. In my first chart I noticed that with each month that passed in 2022, Ebooks seemed to be steadily rising, while books stayed stagnant with a drop off on the 12th month which showed to me that ebooks are rising fast. I then found out the average number of checkouts for ebooks which was 3.403392 and books was 2.847207.
+
+
 
 These will likely be calculated using your DPLYR skills, answering questions such as:
 
@@ -23,64 +32,52 @@ Feel free to calculate and report values that you find relevant.
 ### The Dataset
 
 - Who collected/published the data?  
+
+The data was collected and published from the Seattle Public Library
+
 - What are the parameters of the data (dates, number of checkouts, kinds of books, etc.)?
-- How was the data collected or generated?  
+
+The paramaters of this data are the usage class, checkout type, material type, checkout year, checkout month, checkouts, title, ISBN, creator, subjects, publisher, and publication year.
+
+- How was the data collected or generated?
+
+The data was collected through finding the number of book checkouts that occurred in the Seattle Library.
+
 - Why was the data collected?  
-- What, if any, ethical questions do you need to consider when working with this data?  
+
+According to the Seattle Public Library website, the data was collected to "build our collections to reflect current trends and changing community needs"
+
+- What, if any, ethical questions do you need to consider when working with this data?
+
+I honestly don't have many ethical questions about this data. One possible ethical question I may have is if there is a privacy breach in how this data may be getting collected. 
+
 - What are possible limitations or problems with this data?   (at least 200 words)
 
+While data from the Seattle Public Library can offer valuable insights, there are several limitations and potential issues that need to be considered. One possible limitations or problems that I have with this data is that it is limited to only the Seattle Public Library. I feel that the Seattle Public Library data may differ greatly to data from other states or areas, so it might not be a good representation of the broader population and what types of books get checked out the most versus others. In the Seattle Public Library, the regular books get checked out the most, however, I feel that there may be a good chance that eBooks are actually more prominent in other states. Certain demographic groups could be more and or less likely to use the library as well, depending on where you are at so the data could be easily skewed. I also mentioned earlier how I am concerned with the possible privacy violations the collection of this data may be doing. This ethical question makes me unsure of wanting to use and work with the data. Another issue I have with this data is that the Seattle Public Library may not be able to exactly record all the materials that get checked out. Overall, I feel like this data is very solid though so regardless of these possible limitations, you can still make good and strong conclusions from this data. 
 
 ### First Trends Over Time Chart
 
-Include a chart. Make sure to describe why you included the chart, and what patterns emerged
+I chose this chart because I wanted to see how many ebooks and books were getting checked out per month, and a line graph would well help compare and show the trends in between the two types of books. I noticed that in the ebooks, there was a steady incline in the amount that was being checked out, and in the books it was pretty stagnant with a big dip in the 12th month. This makes me believe that ebooks will eventually pass books in total checkouts per month.
 
-The first chart that you will create and include will show the trend over time of your variable/topic/interest. Think carefully about what you want to communicate to your user (you may have to find relevant trends in the dataset first!). Here are some requirements to help guide your design:
-
-- Show more than one, but fewer than ~10 trends
-  - For example, two books, or 5 different mediums
-- You must have clear x and y axis labels
-- The chart needs a clear title 
-- You need a legend for your different line colors and a clear - legend title
-In your .Rmd file, make sure to describe why you included the chart, and what patterns emerged
-
-When we say "clear" or "human readable" titles and labels, that means that you should not just display the variable name.
-
-Here's an example of how to run an R script inside an RMarkdown file:
 
 ``````{r, echo = FALSE, warning = FALSE, code = readLines("chart1_example.R")}
-```
+chart1
+``````
 
 ### Second Trends Over Time Chart
 
-Include a chart. Make sure to describe why you included the chart, and what patterns emerged
+I chose this chart because I wanted to compare an older material type, the sounddisc, to a newer material type, the audiobook to see how new technology is taking over old ones. Here it is very clear that the total audiobook checkouts are on an incline, while the total sounddisc checkouts are very low and stagnant. This goes to show how older technology isn't being used as well as newer technology, and may even eventually fade if this trend keeps up.
 
-The second chart that you will create and include will show another trend over time of your variable/topic/interest. Think carefully about what you want to communicate to your user (you may have to find relevant trends in the dataset first!). Here are some requirements to help guide your design:
-
-- Show more than one, but fewer than ~10 trends
-  - For example, two books, or 5 different mediums
-- You must have clear x and y axis labels
-- The chart needs a clear title 
-- You need a legend for your different line colors and a clear - legend title
-In your .Rmd file, make sure to describe why you included the chart, and what patterns emerged
-
-When we say "clear" or "human readable" titles and labels, that means that you should not just display the variable name.
-
-Here's an example of how to run an R script inside an RMarkdown file:
 
 ``````{r, echo = FALSE, code = readLines("chart2_example.R")}
-```
+chart2
+``````
 
 ### Your Choice
+I chose this bar chart to visually show the difference in the totals of each material type that is checked out. Here you can clearly see how book has the highest total checkouts, with ebook trailing close behind, audiobook even lower, and sounddisc extremely low in comparison to all 3. This shows how the traditional physical book is still the highest checked out, but ebook is very close behind so with the trends that we've seen earlier in the line graph, I expect that ebooks will overtake books for the highest total checkouts.
 
-The last chart is up to you. It could be a line plot, scatter plot, histogram, bar plot, stacked bar plot, and more. Here are some requirements to help guide your design:
-
-- You must have clear x and y axis labels
-- The chart needs a clear title 
-- You need a legend for your different line colors and a clear legend title
-
-Here's an example of how to run an R script inside an RMarkdown file:
-
-``````{r, echo = FALSE, code = readLines("chart2_example.R")}
-```
+``````{r, echo = FALSE, code = readLines("chart3_example.R")}
+chart3
+``````
 
 
